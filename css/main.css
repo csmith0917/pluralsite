@@ -831,3 +831,8 @@ a.tabledrag-handle {
 div.view div.views-admin-links {
   width: auto;
 }
+
+
+div.messages.status {
+  margin: 15px 0!important;
+}

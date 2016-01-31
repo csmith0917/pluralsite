@@ -1,6 +1,7 @@
     <!-- header starts-->
     <div id="header-wrap">
       <div id="header" class="container_16">
+
         <div id="header-main">
            <h1 id="logo-text">
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
@@ -13,8 +14,7 @@
             <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')))); ?>
           </div>
           <?php endif; ?>
-        
-        <form action="#" id="search-theme-form">
+          <form action="#" id="search-theme-form">
           <div>
             <div id="search">
               <div class="form-item" id="edit-search-theme-form-1-wrapper">
@@ -36,7 +36,7 @@
 <?php print $messages; ?>
       <!-- main -->
       <div id="main" class="grid_8">
-          <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
+         
         <a id="main-content"></a>
         <?php print render($title_prefix); ?>
         <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
@@ -101,7 +101,7 @@
 
       <!-- footer bottom starts here -->
       <div id="footer-bottom">
-        <p class="bottom-left">All your base are belong to us!</p>
+        <p class="bottom-left"><?php print $footer_message; ?></p>
         <ul class="links secondary-links">
           <li><a href="index.html" title="" class="active">Home</a></li>
           <li><a href="rss.xml" title="">RSS Feed</a></li>

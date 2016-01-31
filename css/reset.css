@@ -42,3 +42,7 @@ q:before, q:after {
 blockquote, q {
 	quotes: "" "";
 }
+
+.form-item {
+	margin: 0;
+}
